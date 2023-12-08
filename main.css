@@ -1,0 +1,74 @@
+img {
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100vh;
+}
+
+svg {
+    margin-bottom: 4px;
+}
+
+body {
+    font-family: 'Zilla Slab', serif;
+}
+
+.text-title {
+    font-family: system-ui;
+}
+
+.bgcolors {
+    background-color: #023020;
+    color: #C1E1C1;
+}
+
+.bgcolors-alt {
+    background-color: #4F7942;
+    color: #C1E1C1;
+}
+
+.nav .nav-link {
+    color: #C1E1C1;
+}
+
+.nav .nav-link.active{
+    background-color: #C1E1C1;
+    color: #023020;
+    font-weight: bold;
+}
+
+.highligt-title {
+    color: #4F7942;
+}
+
+.text-highlight {
+    color: #50C878
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+#form button:hover {
+    background-color: #C1E1C1;
+    color: #023020;
+}
+
+#socials a {
+    text-decoration: none;
+    color: #50C878;
+}
+
+#socials li {
+    list-style: none;
+}
+
+.error {
+    color: #FF6347;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}

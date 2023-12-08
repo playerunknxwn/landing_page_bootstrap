@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header id="header1" class="bgcolors navbar navbar-expand-lg sticky-top pb-4">
+        <div class="container">
+            <div class="d-flex text-title">
+                <h1 class="h1 m-0 mt-3">green<h1 class="h1 m-0 mt-3 highligt-title">.io</h1>
+                </h1>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex mt-3">
+                    <li class="nav-item">
+                        <a href="#sobre-green" class="nav-link active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-house me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                            </svg>
+                            sobre nós
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#variedades" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-grid-3x3 me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z" />
+                            </svg>
+                            variedades
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#catalogo" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                            catálogo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fale-conosco" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-quote" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894m-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                                <path
+                                    d="M7.066 6.76A1.665 1.665 0 0 0 4 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z" />
+                            </svg>
+                            fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="header1" data-bs-smooth-scroll="true" data-bs-offset="48">
+        <section id="sobre-green" class="bgcolors pb-5">
+            <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block h-80" src="imgs/pexels-irina-iriser-1069759.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block h-80" src="imgs/pexels-liis-saar-832521.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block h-80" src="imgs/pexels-scott-webb-175268.jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="d-block w-100 mt-2 rounded" src="imgs/about.pexels-cottonbro-studio-4503735.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="fw-bold">plantas para <span class="text-highlight">toda finalidade</span>
+                            </h2>
+                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. quasi pariatur molestiae
+                                eius libero suscipit delectus repellendus, impedit repellat omnis, fuga ex nihil a
+                                consequatur excepturi iste mollitia facere voluptatum fugiat?</p>
+                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatem, hic rerum! quia
+                                dignissimos repellat corrupti porro quam, unde quisquam velit distinctio doloribus
+                                illum incidunt ad, dolorum, laboriosam ea tempore voluptates!</p>
+                            <h2 class="fw-bold">nossas <span class="text-highlight">especialidades</span></h2>
+                            <ul>
+                                <li>decoração</li>
+                                <li>jardinagem</li>
+                                <li>horta/frutífera</li>
+                                <li>medicinal</li>
+                                <li>amostras para estudos biológicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="variedades" class="bgcolors-alt pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-start mb-4 fw-bold">variedades</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="imgs/pexels-huy-phan-3153521.jpg" alt="">
+                        <h3 class="fw-bold">
+                            🌱 plantas
+                        </h3>
+                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. dolore expedita nihil eaque
+                            perferendis delectus itaque saepe reprehenderit soluta ex quibusdam dolorum dolores
+                            aliquid sed sunt libero dicta, voluptate in! Esse?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="imgs/pexels-lil-artsy-1390433.jpg" alt="">
+                        <h3 class="fw-bold">
+                            🌻 flores
+                        </h3>
+                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. quo doloremque atque amet ullam
+                            natus inventore officia debitis eaque omnis consequuntur maxime corrupti porro, nam
+                            sequi totam quos voluptas non animi.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="imgs/pexels-cottonbro-studio-4503266.jpg" alt="">
+                        <h3 class="fw-bold">
+                            🌿 ervas
+                        </h3>
+                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. aut doloremque fugit dolorem
+                            tempora vel qui, molestias, praesentium quaerat molestiae voluptates odit facilis vero
+                            temporibus ratione enim error aliquam facere reiciendis!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="imgs/apples-2788599_1920 (1).jpg" alt="">
+                        <h3 class="fw-bold">
+                            🍎 frutas
+                        </h3>
+                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. aut doloremque fugit dolorem
+                            tempora vel qui, molestias, praesentium quaerat molestiae voluptates odit facilis vero
+                            temporibus ratione enim error aliquam facere reiciendis!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="imgs/pexels-felix-mittermeier-1459495 (1).jpg" alt="">
+                        <h3 class="fw-bold">
+                            🌳 árvores
+                        </h3>
+                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. aut doloremque fugit dolorem
+                            tempora vel qui, molestias, praesentium quaerat molestiae voluptates odit facilis vero
+                            temporibus ratione enim error aliquam facere reiciendis!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="imgs/pexels-lisa-fotios-1301856 (1).jpg" alt="">
+                        <h3 class="fw-bold">
+                            ✨ solo (muito) fértil
+                        </h3>
+                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. aut doloremque fugit dolorem
+                            tempora vel qui, molestias, praesentium quaerat molestiae voluptates odit facilis vero
+                            temporibus ratione enim error aliquam facere reiciendis!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catalogo" class="bgcolors pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="mb-5 fw-bold">
+                        nosso <span class="text-highlight">catálogo</span>
+                    </h2>
+                    <div class="row">
+                        <aside class="col-lg-2 d-lg-flex">
+                            <nav class="nav nav-pills pb-sm-4 flex-lg-column">
+                                <button class="fw-bold text-start nav-link active me-sm-2 mb-2 p-2" data-bs-toggle="tab"
+                                    data-bs-target="#deco" type="button">
+                                    decoração/interior
+                                </button>
+                                <button class="fw-bold text-start nav-link me-sm-2 mb-2 p-2" data-bs-toggle="tab"
+                                    data-bs-target="#jardinagem" type="button">
+                                    jardinagem e paisagismo
+                                </button>
+                                <button class="fw-bold text-start nav-link me-sm-2 mb-2 p-2" data-bs-toggle="tab"
+                                    data-bs-target="#flores" type="button">
+                                    floricultura
+                                </button>
+                                <button class="fw-bold text-start nav-link me-sm-2 mb-2 p-2" data-bs-toggle="tab"
+                                    data-bs-target="#horta" type="button">
+                                    horta/frutas
+                                </button>
+                                <button class="fw-bold text-start nav-link me-sm-2 mb-2 p-2" data-bs-toggle="tab"
+                                    data-bs-target="#ervas" type="button">
+                                    ervas
+                                </button>
+                                <button class="fw-bold text-start nav-link me-sm-2 mb-2 p-2" data-bs-toggle="tab"
+                                    data-bs-target="#especifico" type="button">
+                                    algo específico?
+                                </button>
+                            </nav>
+                        </aside>
+                        <aside class="col-lg-10">
+                            <div class="tab-content">
+                                <div id="deco" class="tab-pane active">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/decopexels-ksenia-chernaya-3952028.jpg" alt="">
+                                            <h5 class="h4 fw-bold">interior</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/decopexels-scott-webb-1048035.jpg" alt="">
+                                            <h5 class="h4 fw-bold">decoração</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/decopots-716579_1920.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">decoração</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/decopexels-ksenia-chernaya-3952028.jpg" alt="">
+                                            <h5 class="h4 fw-bold">interior</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/decopexels-scott-webb-1048035.jpg" alt="">
+                                                thiagomuniz1999@keemail.me               <h5 class="h4 fw-bold">decoração</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/decopots-716579_1920.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">decoração</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/decopexels-ksenia-chernaya-3952028.jpg" alt="">
+                                            <h5 class="h4 fw-bold">interior</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/decopexels-scott-webb-1048035.jpg" alt="">
+                                            <h5 class="h4 fw-bold">decoração</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/decopots-716579_1920.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">decoração</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="jardinagem" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/jarpexels-donald-tong-189298.jpg" alt="">
+                                            <h5 class="h4 fw-bold">paisagismo</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/jarpexels-onur-burak-akn-19145567.jpg" alt="">
+                                            <h5 class="h4 fw-bold">jardinagem</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/jarpexels-pixabay-60628.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">jardinagem</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/jarpexels-donald-tong-189298.jpg" alt="">
+                                            <h5 class="h4 fw-bold">paisagismo</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/jarpexels-onur-burak-akn-19145567.jpg" alt="">
+                                            <h5 class="h4 fw-bold">jardinagem</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/jarpexels-pixabay-60628.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">jardinagem</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="flores" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/fllotus-1205631_1920.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">flor</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/flpexels-branc-garden-19229443.jpg" alt="">
+                                            <h5 class="h4 fw-bold">flores</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/flpexels-matthias-cooper-690370.jpg" alt="">
+                                            <h5 class="h4 fw-bold">flores</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/fllotus-1205631_1920.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">flor</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/flpexels-branc-garden-19229443.jpg" alt="">
+                                            <h5 class="h4 fw-bold">flores</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/fllotus-1205631_1920.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">flor</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/flpexels-branc-garden-19229443.jpg" alt="">
+                                            <h5 class="h4 fw-bold">flores</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/flpexels-matthias-cooper-690370.jpg" alt="">
+                                            <h5 class="h4 fw-bold">flores</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded" src="imgs/catalog/fllotus-1205631_1920.jpg"
+                                                alt="">
+                                            <h5 class="h4 fw-bold">flor</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="horta" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-cottonbro-studio-5561355.jpg" alt="">
+                                            <h5 class="h4 fw-bold">horta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-eva-bronzini-5503508.jpg" alt="">
+                                            <h5 class="h4 fw-bold">fruta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-luiz-m-santos-760281.jpg" alt="">
+                                            <h5 class="h4 fw-bold">fruta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-roman-odintsov-6342170.jpg" alt="">
+                                            <h5 class="h4 fw-bold">horta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-cottonbro-studio-5561355.jpg" alt="">
+                                            <h5 class="h4 fw-bold">horta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-eva-bronzini-5503508.jpg" alt="">
+                                            <h5 class="h4 fw-bold">fruta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-luiz-m-santos-760281.jpg" alt="">
+                                            <h5 class="h4 fw-bold">fruta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-roman-odintsov-6342170.jpg" alt="">
+                                            <h5 class="h4 fw-bold">horta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-cottonbro-studio-5561355.jpg" alt="">
+                                            <h5 class="h4 fw-bold">horta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-eva-bronzini-5503508.jpg" alt="">
+                                            <h5 class="h4 fw-bold">fruta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-luiz-m-santos-760281.jpg" alt="">
+                                            <h5 class="h4 fw-bold">fruta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/hopexels-roman-odintsov-6342170.jpg" alt="">
+                                            <h5 class="h4 fw-bold">horta</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ervas" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-alleksana-4051643.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-eva-bronzini-6261871.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-jessica-lewis-606540.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-alleksana-4051643.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-eva-bronzini-6261871.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-jessica-lewis-606540.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-photomix-company-105028 (copy).jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-alleksana-4051643.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="mb-2 rounded"
+                                                src="imgs/catalog/herbpexels-eva-bronzini-6261871.jpg" alt="">
+                                            <h5 class="h4 fw-bold">ervas</h5>
+                                            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores,
+                                                provident!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="especifico" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <a class="nav-link text-center">
+                                                <img class="mb-2 rounded"
+                                                    src="imgs/catalog/pexels-karolina-grabowska-4750332 (1).jpg" alt="">
+                                                <h2 class="fw-bold">
+                                                    ↓ contacte-nos 
+                                                    ↓</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5 bgcolors-alt">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-5">
+                        fale <span class="text-highlight">conosco</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 mb-5">
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">seu nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">seu email</label>
+                                <input type="email" name="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">seu telefone</label>
+                                <input type="tel" name="telefone" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">sua mensagem</label>
+                                <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold bgcolors">enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row mb-3">
+                            <h3>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul id="socials" class="d-flex">
+                                <li>
+                                    <a class="nav-link me-3 fs-2" href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link me-3 fs-2" href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link me-3 fs-2" href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3>
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <address>
+                                Rua Evergreen, Bairro Greenland - Rio de Janeiro - RJ
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cold-md-7">
+                        &copy; 2023 - Todos os direitos reservados
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
