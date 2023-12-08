@@ -71,4 +71,8 @@ textarea {
     .carousel-item img {
         height: 280px;
     }
+
+    .col-md-4, .col-md-3 {
+        padding-bottom: 10%;
+    }
 }
